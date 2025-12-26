@@ -1,3 +1,4 @@
+//multiplication of the two matrix
 import java.util.Scanner;
 
 public class MultiOfArray {

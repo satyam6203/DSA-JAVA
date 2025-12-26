@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Search{
+class SearchEle{
     int search(int arr[],int n,int key){
         for(int i=0;i<arr.length;i++){
             if(arr[i]==key){
@@ -19,7 +19,7 @@ public class LinearSearch {
         int key=sc.nextInt();
         sc.close();
         int n=arr.length;
-        Search search=new Search();
+        SearchEle search=new SearchEle();
         int result =search.search(arr, n, key);
 
         if(result!=-1){

@@ -1,0 +1,17 @@
+import java.util.*;
+public class TowerOfHanoi {
+    static void tower(int n,char a,char b,char c){
+        if(n==1){
+            System.out.println("move the desk 1 from "+a+" to "+c);
+            return;
+        }
+        tower(n-1, a,c,b);
+        System.out.println("move the desk "+n+" from "+a+" to "+c);
+        tower(n-1, b,a,c);
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        tower(n, 'A', 'B', 'C');
+    }
+}

@@ -1,3 +1,4 @@
+//the sum of the two matrix
 import java.util.Scanner;
 
 public class SumOfArray {
